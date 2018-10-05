@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark">
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="60sp" />
+        <TextView
+            android:id="@+id/moneySpentTV"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:text="@string/money_spent" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/list_fab"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="openSpendingActivity"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_assessment_black_24dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="addAmount"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Money Spent</string>
+    <string name="money_spent">Money Spent</string>
+    <string name="filter_by">Filter</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="noamountadded">No Amount Added!</string>
+</resources>
